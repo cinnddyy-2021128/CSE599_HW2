@@ -159,7 +159,7 @@ def main():
     while step < args.steps:
         for x, y, mask in dl:
             x, y, mask = x.to(device), y.to(device), mask.to(device)
-            mask[:, :2] = 0
+            mask[:, :3] = 0
             pad_mask = (x != pad_id)
             logits = model(x, pad_mask=pad_mask)                           # (B, T, V)
             loss   = masked_ce_loss(logits, y, mask)
