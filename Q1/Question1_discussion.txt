@@ -1,0 +1,5 @@
+Modifications made to the original code base: added the attention masking to model.py in the forward function of CausalSelfAttention
+
+att = None
+if pad_mask is not None:
+  att = (pad_mask == 1)[:, None, None, :]  # True for pad tokens
