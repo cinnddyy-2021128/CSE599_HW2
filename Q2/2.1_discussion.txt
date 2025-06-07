@@ -1,1 +1,15 @@
 Description of the train/test split/process and the number of datapoints used for each split:
+
+The data generation process for this project involves systematically creating all possible arithmetic 
+equations for the operators "+", "-", and "/" over the moduli 113 and 97. For each operator and each modulus, 
+every valid pair of operands (a, b) in the range 0 to p-1 (where p is the modulus, either 113 or 97) is considered, 
+with division skipping cases where b is zero. For addition and subtraction, this results in 12,769 equations each 
+for modulus 113 (113 × 113) and 9,409 equations each for modulus 97 (97 × 97), 
+while division yields 12,656 equations for modulus 113 (113 × 112) and 9,312 equations for modulus 97 (97 × 96). 
+The full set of equations for each operator and modulus is shuffled using a fixed random seed to ensure reproducibility. 
+The shuffled data is then split into training (80%), 
+validation (10%), and test (10%) sets. Specifically, for addition and subtraction, there are 10,215 training, 
+1,277 validation, and 1,277 test examples for modulus 113, and 7,527 training, 941 validation, and 941 test examples for modulus 97; 
+for division, there are 10,124 training, 1,266 validation, and 1,266 test examples for modulus 113, and 7,449 training, 931 validation, 
+and 932 test examples for modulus 97. Each split is saved as a separate text file in the data directory, 
+named according to the operator, modulus, and split (e.g., "addition_113_train.txt", "addition_97_val.txt", "division_113_test.txt").
