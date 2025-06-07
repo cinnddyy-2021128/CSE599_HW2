@@ -3,3 +3,5 @@ Modifications made to the original code base: added the attention masking to mod
 att = None
 if pad_mask is not None:
   att = (pad_mask == 1)[:, None, None, :]  # True for pad tokens
+
+One challenge we faced was to figure out the masking logic.
