@@ -37,7 +37,6 @@ if __name__ == "__main__":
     plt.savefig(f"{out_dir}/loss_curve.png")
     plt.close()
 
-    # ========= 4. 画 Accuracy 曲线 =========
     plt.figure(figsize=(6,4))
     plt.plot(
         train_df["epoch"], train_df["train_acc"],
