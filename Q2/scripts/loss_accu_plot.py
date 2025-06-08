@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
 
-    metrics_csv = "../logs/p97_l1_s0_sub/lightning_logs/version_0/metrics.csv"
-    out_dir = "../logs/p97_l1_s0_sub/plots_simple"
+    metrics_csv = "../logs/p113_l1_s599_add/lightning_logs/version_0/metrics.csv"
+    out_dir = "../logs/p113_l1_s599_add/plots_simple"
     os.makedirs(out_dir, exist_ok=True)
 
     df = pd.read_csv(metrics_csv)
@@ -25,12 +25,12 @@ if __name__ == "__main__":
     )
     plt.plot(
         val_df["epoch"], val_df["val_loss"],
-        label="Val/Test Loss",
+        label="Test Loss",
         linewidth=2,
     )
     plt.xlabel("Epoch")
     plt.ylabel("Loss")
-    plt.title("Train vs Val Loss")
+    plt.title("Train vs Test Loss")
     plt.legend()
     plt.grid(alpha=0.3)
     plt.tight_layout()
@@ -45,12 +45,12 @@ if __name__ == "__main__":
     )
     plt.plot(
         val_df["epoch"], val_df["val_acc"],
-        label="Val/Test Accuracy",
+        label="Test Accuracy",
         linewidth=2,
     )
     plt.xlabel("Epoch")
     plt.ylabel("Accuracy (%)")
-    plt.title("Train vs Val Accuracy")
+    plt.title("Train vs Test Accuracy")
     plt.legend()
     plt.grid(alpha=0.3)
     plt.tight_layout()
