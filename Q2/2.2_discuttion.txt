@@ -1,5 +1,0 @@
-Final loss and train/test accuracy across 3 random seeds:
-
-Seed #1 (): train accuracy: test accuracy:
-Seed #2 (): train accuracy: test accuracy:
-Seed #3 (): train accuracy: test accuracy:

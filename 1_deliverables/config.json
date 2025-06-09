@@ -1,0 +1,18 @@
+{
+  "data_path": "tiny.txt",
+  "logdir": "logs",
+  "n_layer": 1,
+  "n_head": 2,
+  "n_embd": 32,
+  "block_size": 22,
+  "batch_size": 1,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "steps": 2000,
+  "seed": 42,
+  "save_every": 500
+}
