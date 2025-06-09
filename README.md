@@ -1,4 +1,15 @@
 # CSE599 HW2
+
+| File/folder | Purpose |
+|-------------|---------|
+| `HW2.pdf` | All the plots and free response questions organized|
+| `1_deliverables` | folder including log, ckpt, train and inference code for question 1|
+| `2_1_deliverables` | Generated train/test splits for question 2.1|
+| `2_2_deliverables` | Final model checkpoint for one of the seeds for question 2.2|
+| `2_3_deliverables` | Final model ckpt for one seed for question 2.3|
+| `Q1` | Every file for question 1|
+| `Q2` | Every file for question 2|
+
 # To run question 1
 
 ---
