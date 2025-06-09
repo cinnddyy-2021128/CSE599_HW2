@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
 
-    metrics_csv = "../logs/p113_l1_s599_add/lightning_logs/version_0/metrics.csv"
-    out_dir = "../logs/p113_l1_s599_add/plots_simple"
+    metrics_csv = "../logs/p97_l2_s0_div/lightning_logs/version_6/metrics.csv"
+    out_dir = "../logs/p97_l2_s0_div/plots_simple"
     os.makedirs(out_dir, exist_ok=True)
 
     df = pd.read_csv(metrics_csv)
