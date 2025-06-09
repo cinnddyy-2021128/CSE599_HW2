@@ -59,7 +59,7 @@
 # OpenAI Grok Curve Experiments
 
 # 2.1 Data Generation
-`scripts/make_data.py`
+`python scripts/make_data.py`
 
 # 2.2
 
